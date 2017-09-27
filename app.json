@@ -1,0 +1,25 @@
+{
+    "name": "bim-360-account-data-export-autodesk-forge",
+    "description": "bim-360-account-data-export-autodesk-forge",
+    "repository": "https://github.com/MGTHEBOSS/bim-360-account-data-export-autodesk-forge",
+    "logo": "",
+    "keywords": [
+        "bim-360",
+        "autodesk",
+        "forge"
+    ],
+    "env": {
+        "FORGE_CLIENT_ID": {
+            "description": "Forge Client ID"
+        },
+        "FORGE_CLIENT_SECRET": {
+            "description": "Forge Client Secret"
+        },
+        "FORGE_CALLBACK_URL": {
+            "description": "Forge Callback URL",
+            "value": "http://localhost:3000/api/forge/callback/oauth"
+        }
+    },
+    "website": "https://github.com/MGTHEBOSS/bim-360-account-data-export-autodesk-forge",
+    "success_url": "/"
+}

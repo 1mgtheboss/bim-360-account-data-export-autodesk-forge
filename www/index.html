@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BIM 360 Account Data Export</title>
+    <meta name="description" content="">
+    <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.min.css">
+    <link rel="stylesheet" href="css/font.css">
+
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1 style="font-weight: lighter;">
+                BIM 360 Account Data Export
+            </h1>
+        </center>
+    </header>
+
+    <main>
+        <center>
+            <button id="signinout" class="bttn-jelly bttn-md bttn-primary">sign in</button>
+            <button id="help" class="bttn-jelly bttn-md bttn-primary">help</button>
+            <button id="provisioning" class="bttn-jelly bttn-md bttn-primary">provisioning</button><br>
+            <a id="helpmodal" href="modals/help.html" rel="modal:open" style="display: none;"></a>
+            <a id="provisioningmodal-1" href="modals/provisioningmodal-1.html" rel="modal:open" style="display: none;"></a>
+            <a id="provisioningmodal-2" href="modals/provisioningmodal-2.html" rel="modal:open" style="display: none;"></a>
+
+        </center>
+        <br><br>
+        <div id="content" style="display: none;">
+            <center>
+                <form>
+                    bim 360 account id: <input class="textbox" type="text" id="accountid" maxlength="1000" placeholder="bim 360 account id"><br><br> document width: <input class="textbox" type="text" id="documentwidth" placeholder="1920"><br><br> document height: <input class="textbox" type="text" id="documentheight" placeholder="1080"><br><br>
+                    <button type="submit" class="bttn-jelly bttn-md bttn-primary">submit</button><br>
+                </form>
+            </center>
+            <br><br>
+
+
+
+            <div id="resultintermediate" class="jsontotable" style="display: none;"></div>
+            <div id="result" style="font-family: Arial; display: none;">
+                <p style="margin: 10px; font-size: 333%;">BIM 360 ACCOUNT DATA</p>
+                <br><br>
+                <p style="margin: 10px;">PROJECTS</p>
+                <div id="resultprojects" class="jsontotable"></div>
+                <br>
+                <p style="margin: 10px;">COMPANIES</p>
+                <div id="resultcompanies" class="jsontotable"></div>
+                <br>
+                <p style="margin: 10px;">USERS</p>
+                <div id="resultusers" class="jsontotable"></div>
+                <br>
+                <p style="margin: 10px;">BUSINESS UNITS</p>
+                <div id="resultbusinessunits" class="jsontotable"></div>
+                <br>
+                <button id="save" class="bttn-jelly bttn-md bttn-primary">save</button>
+            </div>
+
+            <div id="editor"></div>
+
+        </div>
+
+
+    </main>
+
+    <footer style="background-color: #ffffff; position: fixed; bottom: 0px; ">
+		© Manojit Ghosh
+	</footer>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.jsontotable.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.modal.min.css" media="screen" />
+    <script src="js/client.js"></script>
+
+</body>
+
+</html>

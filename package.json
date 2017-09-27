@@ -1,0 +1,22 @@
+{
+    "name": "bim-360-account-data-export-autodesk-forge",
+    "version": "1.0.0",
+    "description": "bim-360-account-data-export-autodesk-forge",
+
+    "dependencies": {
+        "express": "^4.13.4",
+        "forge-apis": "^0.4.1",
+        "request": "^2.79.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MGTHEBOSS/bim-360-account-data-export-autodesk-forge.git"
+    },
+    "scripts": {
+        "start": "NODE_ENV=production node start.js",
+        "dev": "node start.js",
+        "nodemon": "nodemon start.js --ignore www/"
+    },
+    "author": "mgtheboss",
+    "license": "MIT"
+}
